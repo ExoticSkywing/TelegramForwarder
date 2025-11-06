@@ -1,0 +1,10 @@
+(?:\[在花频道\]\([^)]+\)|在花频道\s*\([^)]+\))	[浪漫宇宙](https://t.me/nebuluxe)
+(?:\[投稿新鲜事\]\([^)]+\)|投稿新鲜事\s*\([^)]+\))	[反馈私聊](https://t.me/nebuluxe_bot)
+(?:\[茶馆\]\([^)]+\)|茶馆\s*\([^)]+\))	[茶馆](https://t.me/omni_stars)
+(?<!\[)在花(?!频道|\])	浪漫宇宙
+([^\s\[]+)\s*\(https?://t\.me/zaihuanews/?\)	[\1](https://t.me/nebuluxe)
+\[(.*?)\]\(https?://t\.me/zaihuanews/?\)	[\1](https://t.me/nebuluxe)
+\[\[([^\]]+)\]\]\(([^)]+)\)	[\1](\2)
+\[在花\]\(([^)]+)\)	[浪漫宇宙](\1)
+https?://t\.me/zaihuanews/?	https://t.me/nebuluxe
+$	\n\n#新闻
